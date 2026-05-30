@@ -12,7 +12,7 @@
  @keyframes beat{0%,100%{opacity:.25;transform:scale(1)}45%{opacity:.9;transform:scale(1.04)}55%{opacity:.55}}
  .panel{position:fixed;z-index:5;background:rgba(13,27,42,.82);backdrop-filter:blur(7px);
    border:1px solid rgba(201,168,76,.35);border-radius:14px;padding:20px 22px;box-shadow:0 10px 40px rgba(0,0,0,.45)}
- #tile{top:24px;left:24px;max-width:430px}
+ #tile{top:24px;left:24px;max-width:400px;max-height:calc(100% - 48px);overflow:auto}
  #tile .kicker{font-size:11px;letter-spacing:.32em;color:#C9A84C;text-transform:uppercase}
  #tile h1{font-family:'Playfair Display',serif;font-weight:700;font-size:30px;margin:8px 0 2px;color:#fff;line-height:1.05}
  #tile h1 em{color:#C9A84C;font-style:italic}
@@ -24,17 +24,17 @@
  .stat b{display:block;font-family:'Playfair Display',serif;font-size:22px;color:#fff;line-height:1}
  .stat span{font-size:9.5px;letter-spacing:.12em;color:#8aa0b3;text-transform:uppercase}
  .moat{font-size:11px;color:#8aa0b3;font-style:italic;border-top:1px solid rgba(201,168,76,.2);padding-top:11px;margin-top:13px}
- #legend{bottom:24px;left:24px;max-width:280px;max-height:46vh;overflow:auto}
+ #legend{bottom:24px;right:24px;max-width:250px;max-height:calc(100% - 100px);overflow:auto}
  #legend .lt{font-size:10px;letter-spacing:.28em;color:#C9A84C;text-transform:uppercase;margin-bottom:10px}
  .lr{display:flex;align-items:center;gap:9px;margin:5px 0;font-size:11px;color:#c8d2dc}
  .dot{width:10px;height:10px;border-radius:50%;flex:none;box-shadow:0 0 7px currentColor}
  .lr small{color:#7c8ea0;margin-left:auto}
- #ctrl{position:fixed;right:24px;top:24px;z-index:6;display:flex;flex-direction:column;gap:8px}
+ #ctrl{position:fixed;right:24px;top:24px;z-index:7;z-index:6;display:flex;flex-direction:column;gap:8px}
  #ctrl button{width:42px;height:42px;border-radius:11px;border:1px solid rgba(201,168,76,.4);
    background:rgba(13,27,42,.85);color:#C9A84C;font-size:20px;cursor:pointer;font-family:'DM Mono',monospace;
    transition:.15s;backdrop-filter:blur(7px)}
  #ctrl button:hover{background:#C9A84C;color:#0d1b2a;border-color:#C9A84C}
- #hint{position:fixed;bottom:24px;right:24px;z-index:5;font-size:10.5px;color:#6f8295;letter-spacing:.05em}
+ #hint{position:fixed;bottom:8px;left:50%;transform:translateX(-50%);z-index:4;font-size:10px;color:#6f8295;letter-spacing:.05em;text-align:center}
  #err{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9;color:#D26B6B;font-size:13px;display:none}
 </style></head>
 <body>
