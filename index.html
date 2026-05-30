@@ -4,7 +4,7 @@
 <title>StrategyAI - System Architecture</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
- html,body{margin:0;height:100%;background:#0d1b2a;overflow:hidden;font-family:'DM Mono',ui-monospace,monospace;color:#e9e2d0}
+ *{box-sizing:border-box}html,body{margin:0;padding:0;height:100%;width:100%;max-width:100%;background:#0d1b2a;overflow:hidden;font-family:'DM Mono',ui-monospace,monospace;color:#e9e2d0}
  #graph{position:fixed;inset:0;z-index:1}
  .heartbeat{position:fixed;inset:0;pointer-events:none;z-index:2;mix-blend-mode:screen;
    background:radial-gradient(circle at 50% 50%, rgba(201,168,76,0.10), rgba(201,168,76,0) 55%);
@@ -45,7 +45,8 @@
  #tile.collapsed > :not(.kicker):not(h1){display:none}
  #legend.collapsed > :not(.lt){display:none}
  .chev{display:inline-block;float:right;color:#C9A84C;font-size:13px;margin-left:8px}
- #ctrl{top:50%;bottom:auto;right:8px;transform:translateY(-50%)}
+ #ctrl{top:auto;bottom:64px;right:8px;transform:none}
+ #ctrl button{width:36px;height:36px;font-size:17px}
  #hint{display:none}
 }
 </style></head>
